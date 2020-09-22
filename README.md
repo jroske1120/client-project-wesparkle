@@ -34,7 +34,7 @@ Before you get started, make sure you have the following software installed on y
 - User enters a long link and clicks generate. This displays a shortened link within sprkl.es domain, as well as a QR code (Note: for the scope of this project, the sprkl.es domain was not yet connected to WeSparkle's server, so the short link and QR code actually redirect to the original long link. The logic is set up for the connection to a server, however)
 - Unregistered users can scroll down and read about the benefits of link shortening. (Note: for the scope of the project, the email sends to a dummy email WeSparkle will set up with their admin email.)
 
-![Main Page - Submit Feedback](images/feedback.png)
+![Main Page - Submit Feedback](src/images/feedback.png)
 
 ## Usage - Registered User
 - If a user registers, they will have access to a home page with a list of their shortened links with the ability to do the following:
@@ -48,7 +48,6 @@ Before you get started, make sure you have the following software installed on y
 
 ![Registered Page - Edit Tags](src/images/edit-tags.gif)
 ![Registered Page - Sort and Filter](src/images/sort-link.gif)
-![Registered Page - Metrics](src/images/Metrics.png)
 
 ## Built With
 - HTML
