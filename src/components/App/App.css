@@ -325,10 +325,20 @@ a {
     color: var(--vermilion);
     font-size: 17px;
 }
-.item-link {
+.item-link.long {
+    text-align: center;
+    font-size: small;
+    margin-bottom: 1em;
+    width: 306px;
+}
+
+.item-link.short {
+    text-align: center;
+    font-size: large;
     margin-bottom: 1.5em;
     width: 306px;
 }
+
 .item-link:hover {
     font-weight: 600;
     color: var(--vermilion);
