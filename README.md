@@ -47,7 +47,6 @@ Before you get started, make sure you have the following software installed on y
         - view metrics about that link (amount of clicks by day, etc.) (Note: because the domain will be connected by WeSparkle for their private use, the data for the metrics is dummy data. However, the logic is there for these features)
 
 ![Registered Page - Sort and Filter](src/images/sort-link.gif)
-
 ![Registered Page - Edit Tags](src/images/edit-tags.gif)
 
 ## Built With
