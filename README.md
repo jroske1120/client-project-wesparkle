@@ -46,8 +46,9 @@ Before you get started, make sure you have the following software installed on y
         - copy or remove the link.
         - view metrics about that link (amount of clicks by day, etc.) (Note: because the domain will be connected by WeSparkle for their private use, the data for the metrics is dummy data. However, the logic is there for these features)
 
-![Registered Page - Edit Tags](src/images/edit-tags.gif)
 ![Registered Page - Sort and Filter](src/images/sort-link.gif)
+
+![Registered Page - Edit Tags](src/images/edit-tags.gif)
 
 ## Built With
 - HTML
@@ -72,5 +73,5 @@ One of my responsibilities for this collaborative project was to be the contact 
 
 In the code, much of my involvement was on the back end. I wrote most of the logic for the routes for links, details, feedback, and tags, as well as their respective logic in the Sagas and Reducers. Much of my front end work can be seen in the LinkList, LinkListItem, LinkTags, and LinkDetails components. I also did much of the styling for the LinkTags component.
 
-That being said, this was a full team effort, and everyone helped both where they felt comfortable and where they wanted to challenge themselves. Huge thanks to Audry Wolters, Eric Elvendahl, and Nick Simonelli for our join efforts in making this monumental effort not only manageable, but a great learning experience!
+That being said, this was a full team effort, and everyone helped both where they felt comfortable and where they wanted to challenge themselves. Huge thanks to Audry Wolters, Eric Elvendahl, and Nick Simonelli for the joint efforts in making this monumental effort not only manageable, but a great learning experience!
 
