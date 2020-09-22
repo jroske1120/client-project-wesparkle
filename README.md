@@ -2,12 +2,9 @@
 
 _Duration: 3 weeks_
 
-Say a user of WeSparkle's Sparkle Assistant would like to share a document with her customers.
-The link is very long and confusing. She could go to a third party link shortener but WeSparkle now has their own that exists within the Sparkle Ecosystem.
-Now she can create a short link and a QR code with less steps and less frustraion.
+WeSparkle's existing Sparkle Assistant helps small business owners operate by scheduling and marketing from their phone. However, sharing links to docs, forms, or pdf's have too many characters to send via SMS.
 
-But anyone on the internet can use this link shortener. If they create an account, they will have access to advanced features. Each link shortened will saved. Links can i be tagged and sorted.
-Also, metrics can be viewed. Clicks by Day, Top Performing Links, etc.
+Rather than redirect to a third party link shortener, this application shortens links right in WeSparkle's system*, provides a QR code, tagging, sorting and filtering of links, and link analytics to help business owners target marketing strategy.
 
 ## Prerequisites
 

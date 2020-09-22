@@ -74,7 +74,7 @@ class LinkTags extends Component {
           <li className="input-tag__tags__input">
             <input
               type="text"
-              placeholder="add here..."
+              placeholder="Add tag here..."
               onKeyDown={this.inputKeyDown}
               ref={(c) => {
                 this.tagInput = c;

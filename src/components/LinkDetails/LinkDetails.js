@@ -56,15 +56,15 @@ class LinkDetails extends Component {
 
         <div className="container link-item">
           <QRCode
-            className="item-link"
+            className="item-link long"
             value={this.state.baseUrl + link.short_url}
           />
           <div className="item-text item-title">Long URL:</div>
-          <div className="item-text item-link">
+          <div className="item-text item-link long">
             {<a href={link.long_url}>{link.long_url}</a>}
           </div>
           <div className="item-text item-title">Short URL:</div>
-          <div className="item-text item-link">
+          <div className="item-text item-link short">
             {/* Link code changed for presentation.
             Original here:
             {<a href={this.state.baseUrl + link.short_url}>{this.state.baseUrl + link.short_url}</a>} */}
