@@ -5,6 +5,7 @@ import QRCode from "qrcode.react";
 import Button from "@material-ui/core/Button";
 import parse from "url-parse";
 import validUrl from "valid-url";
+import copy from "clipboard-copy";
 
 class LinkShortener extends Component {
   componentDidUpdate() {
@@ -23,20 +24,14 @@ class LinkShortener extends Component {
     baseUrl: "",
   };
 
-  copyClicked = (e) => {
-    this.textArea.select();
-    document.execCommand("copy");
-    // Next two lines from example code:
-    // "This is just personal preference.
-    // I prefer to not show the whole text area selected."
-    e.target.focus();
+  copyLink = () => {
+    // this calls the clipboard-copy library imported above
+    copy(this.state.inputUrl);
     this.setState({
       copySuccess: "Link copied!",
       inputUrl: "",
-      // Don't reset short url since we want shortened link and
-      // QR code to persist after copy
     });
-  }; // end copyClicked()
+  };
 
   generateClicked = () => {
     // Only generate if they have entered a URL
@@ -130,7 +125,11 @@ class LinkShortener extends Component {
         >
           Generate
         </Button>
-
+        <p>
+          Note: Because my deployed version is not connected to WeSparkle's
+          server, the shortened link below does not actually exist. The "Copy"
+          button and QR code will point to the original long link.
+        </p>
         <textarea
           type="text"
           className="text-area short"
@@ -149,7 +148,7 @@ class LinkShortener extends Component {
                 <Button
                   id="copy"
                   className="big short"
-                  onClick={this.copyClicked}
+                  onClick={() => this.copyLink(this.state.inputUrl)}
                   variant="outlined"
                   color="primary"
                 >

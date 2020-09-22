@@ -26,9 +26,9 @@ class LinkDetails extends Component {
     }
   }
 
-  copyLink = () => {
+  copyLink = (link) => {
     // this calls the clipboard-copy library imported above
-    copy(this.state.baseUrl + this.props.reduxState.details.short_url);
+    copy(link.long_url);
     this.setState({
       copySuccess: "Link copied!",
     });
@@ -76,7 +76,7 @@ class LinkDetails extends Component {
             <Button
               id="copy"
               className="short"
-              onClick={this.copyLink}
+              onClick={() => this.copyLink(link)}
               variant="outlined"
               color="primary"
             >

@@ -32,9 +32,12 @@ class LinkListItem extends Component {
     this.props.history.push(`/details/${link.id}`);
   };
 
-  copyLink = () => {
+  copyLink = (link) => {
     // this calls the clipboard-copy library imported above
-    copy(this.state.baseUrl + this.props.link.short_url);
+    copy(link.long_url);
+    this.setState({
+      copySuccess: "Link copied!",
+    });
   };
 
   deleteLink = (link) => {
@@ -71,7 +74,7 @@ class LinkListItem extends Component {
         <div className="link-item button">
           <Button
             id="copy"
-            onClick={this.copyLink}
+            onClick={() => this.copyLink(link)}
             variant="outlined"
             color="primary"
           >
