@@ -167,7 +167,7 @@ class LinkShortener extends Component {
           <div>
             {this.state.shortenedUrl !== "" ? (
               <center>
-                <QRCode className="qr" value={this.state.shortenedUrl} />
+                <QRCode className="qr" value={this.state.inputUrl} />
                 <br />
                 Right click or long press to save image
               </center>
