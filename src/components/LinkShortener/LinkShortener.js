@@ -126,8 +126,10 @@ class LinkShortener extends Component {
           Generate
         </Button>
         <p>
-          Note: Because my deployed version is not connected to WeSparkle's
-          server, the shortened link below does not actually exist. The "Copy"
+          Note: Hey, thanks for checking out my work! Just an FYI, 
+          because my deployed version is not connected to WeSparkle's
+          server, the shortened link below does not actually exist. 
+          While the code was written for them to connect, here the "Copy"
           button and QR code will point to the original long link.
         </p>
         <textarea
